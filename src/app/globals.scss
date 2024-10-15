@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-$background: #1e1e1e;
+$background: #000;
 $foreground: #e1e1e1;
 
 $primary100: #CCE0FF;
@@ -28,9 +28,51 @@ $NeutralLight300: #999999;
 $NeutralLight400: #666666;
 
 body {
+  width: 100vw;
+  height: 100vh;
   color: $foreground;
   background: $background;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.greenlayer {
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(95, 190, 113, 1) 75%, rgba(95, 190, 113, 1) 84%, rgba(0, 0, 0, 1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(95, 190, 113, 1) 75%, rgba(95, 190, 113, 1) 84%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(95, 190, 113, 1) 75%, rgba(95, 190, 113, 1) 84%, rgba(0, 0, 0, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
+}
+
+.bluelayer {
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 102, 255, 0.35) 31%, rgba(0, 102, 255, 0.55) 68%, rgba(0, 0, 0, 0.8) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 102, 255, 0.35) 31%, rgba(0, 102, 255, 0.55) 68%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 102, 255, 0.35) 31%, rgba(0, 102, 255, 0.55) 68%, rgba(0, 0, 0, 0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
+}
+
+.blackhorizontal {
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 102, 255, 0) 47%, rgba(0, 0, 0, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 102, 255, 0) 47%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 102, 255, 0) 47%, rgba(0, 0, 0, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
+}
+
+.blackedge {
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  background: -webkit-linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
+}
+
+.blackvertical {
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 26%, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 1) 100%);
+  background: -webkit-linear-gradient(166deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 26%, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(166deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 26%, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
 }
 
 .simple-transitoin {
@@ -50,7 +92,7 @@ body {
       color: $primary300;
     }
 
-    p{
+    p {
       opacity: 1;
     }
   }
