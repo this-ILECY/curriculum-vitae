@@ -1,0 +1,63 @@
+@import '../assets/variables/font.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$background: #1e1e1e;
+$foreground: #e1e1e1;
+
+$primary100: #CCE0FF;
+$primary200: #4D94FF;
+$primary300: #0066FF;
+$primary400: #003D99;
+
+$secondary100: #BFE5C6;
+$secondary200: #8FD29C;
+$secondary300: #5FBE71;
+$secondary400: #397244;
+
+$NeutralDark100: #444444;
+$NeutralDark200: #2C2C2C;
+$NeutralDark300: #262626;
+$NeutralDark400: #1F1F1F;
+
+$NeutralLight100: #F5F5F5;
+$NeutralLight200: #CCCCCC;
+$NeutralLight300: #999999;
+$NeutralLight400: #666666;
+
+body {
+  color: $foreground;
+  background: $background;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.simple-transitoin {
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navItem {
+  p {
+    opacity: 0;
+  }
+
+  &:hover {
+    background-color: $NeutralLight100;
+    color: $NeutralDark400;
+
+    &.text-primary-300 {
+      color: $primary300;
+    }
+
+    p{
+      opacity: 1;
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
