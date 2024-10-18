@@ -9,7 +9,7 @@ export default function HomePage() {
 
 
   return (
-    <span className="flex w-full h-full relative items-center content-center p-24">
+    <span className="flex w-full h-full relative items-center content-center p-8p md-py-5p select-none">
       <Gradient />
       <img className="h-full absolute right-0 bottom-0" src={me.src} alt="" />
       <span className="w-full h-fit flex flex-row gap-3">
