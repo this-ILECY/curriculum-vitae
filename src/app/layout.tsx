@@ -1,4 +1,5 @@
 import "./globals.scss";
+import HomePage from "./page";
 
 export const metadata = {
   title: 'A.H. Mardani',
@@ -12,7 +13,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="w-screen h-screen">
-      <body>{children}</body>
+      <body>
+        <HomePage>
+          {children}
+        </HomePage>
+      </body>
     </html>
   )
 }
