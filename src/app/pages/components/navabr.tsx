@@ -7,8 +7,6 @@ import Link from "next/link";
 import { route } from "@/app/@consts/route";
 import { usePathname } from 'next/navigation';
 
-
-
 export default function Navbar({ className }: ComponentProps) {
 
     const routes = route;
@@ -27,12 +25,8 @@ export default function Navbar({ className }: ComponentProps) {
     useEffect(() => {
         activateNavItem(findItemId(pathname));
 
-        return (() => {
-
-        })
+        return (() => { })
     })
-
-
 
     return (
         <span className={"flex flex-col gap-20 w-fit font-hubot font-extralight text-xl z-10 " + className}>

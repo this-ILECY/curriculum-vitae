@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
 export default function Gradient() {
 
@@ -9,35 +9,6 @@ export default function Gradient() {
     const blackhorizontal = useRef(null);
     const blackedge = useRef(null);
     const blackvertical = useRef(null);
-
-    let controller = true;
-
-    // useEffect(() => {
-
-    //     // setTimeout(() => {
-    //     const interval = setInterval(() => {
-    //         console.log(controller);
-
-    //         if (controller) {
-    //             greenlayer.current.classList.add(...['top-0', 'right-0']);
-    //             greenlayer.current.classList.remove(...['top-40', 'right-5']);
-
-    //             bluelayer.current.classList.add(...['right-0']);
-    //             bluelayer.current.classList.remove(...['right-3']);
-    //         } else {
-    //             greenlayer.current.classList.add(...['top-40', 'right-5']);
-    //             greenlayer.current.classList.remove(...['top-0', 'right-0']);
-
-    //             bluelayer.current.classList.add(...['right-3']);
-    //             bluelayer.current.classList.remove(...['right-0']);
-    //         }
-
-    //         controller = !controller
-    //     }, 1000);
-    //     return (() => {
-    //         clearInterval(interval)
-    //     })
-    // })
 
     return (
         <span className="contents">
