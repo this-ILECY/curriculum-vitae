@@ -29,7 +29,7 @@ export default function Navbar({ className }: ComponentProps) {
     })
 
     return (
-        <span className={"flex flex-col gap-20 w-fit font-hubot font-extralight text-xl z-10 " + className}>
+        <span className={"flex flex-col gap-20 w-fit justify-center font-hubot font-extralight text-xl z-10 " + className}>
             <span className="flex flex-col gap-9">
                 <Link className="contents" href={routes.home?.direction ?? ''}>
                     <span onClick={() => activateNavItem(0)} className={"navItem p-1.5 rounded-2xl w-fit simple-transition flex flex-row items-center gap-3 cursor-pointer " + (activeIndex === 0 ? "text-primary-300" : "")}>

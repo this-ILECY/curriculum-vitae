@@ -232,6 +232,10 @@ body {
   }
 }
 
+.text-no-wrap{
+  text-wrap-mode: nowrap;
+}
+
 .tabs {
   border: 1px solid $NeutralDark100;
   border-radius: 16px;
