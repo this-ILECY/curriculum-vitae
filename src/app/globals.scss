@@ -232,7 +232,27 @@ body {
   }
 }
 
-.text-no-wrap{
+.hide {
+  opacity: 0;
+}
+
+.line-height {
+  line-height: 30px;
+}
+
+.no-height {
+  height: 0;
+  padding: 0 !important;
+
+  * {
+    padding: 0 !important;
+    height: 0;
+  }
+
+}
+
+
+.text-no-wrap {
   text-wrap-mode: nowrap;
 }
 

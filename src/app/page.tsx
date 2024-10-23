@@ -12,7 +12,7 @@ export default function HomePage({ children }: { children: React.ReactNode }) {
   // const pathname = usePathname(); 
 
   // console.log(pathname);
-  
+
 
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -42,9 +42,8 @@ export default function HomePage({ children }: { children: React.ReactNode }) {
 
       <div className="w-full h-fit flex flex-row gap-3">
         <Navbar />
-        {/* Render the appropriate component based on the current route */}
-        {/* {pathname === "/home" && <Home />} */}
         {children}
+        <Navbar className="opacity-0" />
       </div>
     </div>
   );
