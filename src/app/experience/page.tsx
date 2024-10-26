@@ -54,7 +54,7 @@ export default function experience() {
 
     return (
         <span className="z-10 text-white grow flex">
-            <span className="job-box p-4p mx-16 squircle mask-squircle w-full flex flex-col justify-start items-center grow h-full">
+            <span className="job-box job-box-radius p-4p mx-16 squircle mask-squircle w-full flex flex-col justify-start items-center grow h-full">
                 <span className="relative tabs flex gap-10 py-2 px-3 font-hubot font-light">
                     <span ref={activetab} className="absolute bg-primary-400 top-2 left-3 h-full z-1 transition-all"></span>
                     <span ref={ray} onClick={() => { activeTab(ray.current, 'right') }} className="flex justify-center py-1 px-2 z-10 cursor-pointer">Rayvarz</span>

@@ -8,7 +8,7 @@ interface Job {
     end: string;
     description: string;
     type: string,
-    icon: React.FC<ComponentProps<"svg">>; // Define the icon as a React functional component
+    icon: React.FC<ComponentProps<"svg">>;
 }
 
 export const Jobs: Job[] = [{

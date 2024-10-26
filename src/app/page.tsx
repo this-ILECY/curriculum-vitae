@@ -40,7 +40,7 @@ export default function HomePage({ children }: { children: React.ReactNode }) {
     <div className="flex w-screen main-page relative items-center content-center p-8 md:py-5 select-none">
       <Gradient />
 
-      <div className="w-full h-fit flex flex-row gap-3">
+      <div className="w-full h-fit flex flex-row gap-3 justify-between">
         <Navbar />
         {children}
         <Navbar className="opacity-0" />

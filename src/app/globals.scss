@@ -265,8 +265,29 @@ body {
   }
 }
 
-.job-box {
+.project-main {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 3fr 7fr;
+
+  .desc {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr fit-content(0px);
+  }
+}
+
+.active-project {
+  width: 5px;
+  aspect-ratio: 1/1;
+  border-radius: 999px;
+}
+
+.job-box-radius {
   border-radius: 4.5% / 36px;
+}
+
+.job-box {
   background: rgb(30, 30, 30);
   background: -moz-linear-gradient(342deg, rgba(30, 30, 30, 0.7) 0%, rgba(0, 0, 0, 0.5) 63%, rgba(0, 0, 0, 0.7) 100%);
   background: -webkit-linear-gradient(342deg, rgba(30, 30, 30, 0.7) 0%, rgba(0, 0, 0, 0.5) 63%, rgba(0, 0, 0, 0.7) 100%);
