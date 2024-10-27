@@ -300,6 +300,46 @@ body {
   height: 100.1vh
 }
 
+.f-round{
+  border-radius: 99999px;
+}
+
+.h-20p{
+  height: 20%;
+}
+
+.right-0p{
+  right: calc(0% - 100px);
+}
+.right-25p{
+  right: calc(4% - 50px);
+}
+.right-50p{
+  right: calc(50% - 50px);
+}
+.right-75p{
+  right: calc(96% - 50px);
+}
+.right-100p{
+  right: calc(100%);
+}
+
+.top-0p{
+  top: calc(0% - 100px);
+}
+.top-25p{
+  top: calc(10% - 50px);
+}
+.top-50p{
+  top: calc(50% - 50px);
+}
+.top-75p{
+  top: calc(96% - 50px);
+}
+.top-100p{
+  top: calc(100%);
+}
+
 @media only screen and (max-width: 1366px) {
   .md-max-w-50 {
     max-width: 50%;
