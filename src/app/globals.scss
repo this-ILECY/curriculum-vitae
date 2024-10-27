@@ -300,45 +300,221 @@ body {
   height: 100.1vh
 }
 
-.f-round{
+.f-round {
   border-radius: 99999px;
 }
 
-.h-20p{
+.h-60p {
+  height: 60%;
+}
+
+.h-20p {
   height: 20%;
 }
 
-.right-0p{
+.h-15p {
+  height: 15%;
+}
+
+.h-10p {
+  height: 10%;
+}
+
+.h-5p {
+  height: 5%;
+}
+
+.right-0p {
   right: calc(0% - 100px);
 }
-.right-25p{
+
+.right-4p {
   right: calc(4% - 50px);
 }
-.right-50p{
+
+.right-50p {
   right: calc(50% - 50px);
 }
-.right-75p{
+
+.right-96p {
   right: calc(96% - 50px);
 }
-.right-100p{
+
+.right-100p {
   right: calc(100%);
 }
 
-.top-0p{
+.top-0p {
   top: calc(0% - 100px);
 }
-.top-25p{
+
+.top-10p {
   top: calc(10% - 50px);
 }
-.top-50p{
+
+.top-50p {
   top: calc(50% - 50px);
 }
-.top-75p{
+
+.top-96p {
   top: calc(96% - 50px);
 }
-.top-100p{
+
+.top-100p {
   top: calc(100%);
 }
+
+.photoshop {
+  right: calc(5% - 50px);
+  top: calc(9% - 50px);
+}
+
+.material {
+  right: calc(45% + 60px);
+  top: calc(0% - 60px);
+}
+
+.rust {
+  right: calc(33% - 60px);
+  top: calc(4% - 60px);
+}
+
+.prime {
+  right: calc(58% + 60px);
+  top: calc(7% - 60px);
+}
+
+.sass {
+  top: calc(0% - 75px);
+  right: calc(60% + 60px);
+}
+
+.git {
+  top: calc(0% - 90px);
+  right: calc(46% - 60px);
+}
+
+.agile {
+  top: calc(0% - 60px);
+  right: calc(26% - 60px);
+}
+
+.illustrartor {
+  top: calc(28% - 60px);
+  right: calc(0% - 60px);
+}
+
+.xd {
+  top: calc(41% - 60px);
+  right: calc(0% - 55px);
+}
+
+.socket {
+  top: calc(46% + 60px);
+  right: calc(0% - 70px);
+}
+
+.api {
+  top: calc(61% + 60px);
+  right: calc(0% - 60px);
+}
+
+.postgress {
+  top: calc(100% - 10px);
+  right: calc(0% + 55px);
+}
+
+.sql {
+  top: calc(100% + 15px);
+  right: calc(10% + 60px);
+}
+
+.linq {
+  top: calc(58% + 60px);
+  right: calc(0% - 85px);
+}
+
+.winform {
+  top: calc(72% + 60px);
+  right: calc(0% - 60px);
+}
+
+.asp {
+  top: calc(90% + 60px);
+  right: calc(23% - 60px);
+}
+
+.ado {
+  top: calc(95% + 60px);
+  right: calc(35% - 60px);
+}
+
+.dapper {
+  top: calc(100% + 57px);
+  right: calc(49% - 60px);
+}
+
+.unity {
+  top: calc(100% + 30px);
+  right: calc(43% + 60px);
+}
+
+.nest {
+  top: calc(86% + 60px);
+  right: calc(86% - 60px);
+}
+
+.docker {
+  top: calc(90% + 60px);
+  right: calc(98% - 60px);
+}
+
+.rabit {
+  top: calc(97% + 60px);
+  right: calc(86% - 60px);
+}
+
+.vb {
+  top: calc(100% + 70px);
+  right: calc(71% - 60px);
+}
+
+.node {
+  top: calc(90% - 70px);
+  right: calc(100% - 20px);
+}
+
+.express {
+  top: calc(44% + 65px);
+  right: calc(100% - 10px);
+}
+
+.tail {
+  top: calc(1% + 60px);
+  right: calc(100% - 28px);
+}
+
+.boot {
+  top: calc(12% + 60px);
+  right: calc(100% - 10px);
+}
+
+.jquery {
+  top: calc(0% + 50px);
+  right: calc(100% + 10px);
+}
+
+.html {
+  top: calc(7% + 60px);
+  right: calc(100% + 36px);
+}
+
+.css {
+  top: calc(16% + 60px);
+  right: calc(100% + 43px);
+}
+
+
 
 @media only screen and (max-width: 1366px) {
   .md-max-w-50 {
