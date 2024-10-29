@@ -396,7 +396,7 @@ body {
 
 .agile {
   top: calc(0% - 60px);
-  right: calc(26% - 60px);
+  right: calc(27% - 60px);
 }
 
 .illustrartor {
@@ -461,17 +461,17 @@ body {
 
 .nest {
   top: calc(86% + 60px);
-  right: calc(86% - 60px);
+  right: calc(89% - 60px);
 }
 
 .docker {
   top: calc(90% + 60px);
-  right: calc(98% - 60px);
+  right: calc(100% - 50px);
 }
 
 .rabit {
   top: calc(97% + 60px);
-  right: calc(86% - 60px);
+  right: calc(88% - 60px);
 }
 
 .vb {
@@ -532,6 +532,14 @@ body {
   .md-py-5p {
     padding-top: 5%;
     padding-bottom: 5%;
+  }
+
+  .mx-0p{
+    margin: 0;
+  }
+
+  .text-2xl-md{
+    font-size: 1.5rem;
   }
 }
 

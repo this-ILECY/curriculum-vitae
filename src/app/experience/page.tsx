@@ -54,7 +54,7 @@ export default function experience() {
 
     return (
         <span className="z-10 text-white grow flex">
-            <span className="job-box job-box-radius p-4p mx-16 squircle mask-squircle w-full flex flex-col justify-start items-center grow h-full">
+            <span className="mx-0p job-box job-box-radius p-4p mx-16 squircle mask-squircle w-full flex flex-col justify-start items-center grow h-full">
                 <span className="relative tabs flex gap-10 py-2 px-3 font-hubot font-light">
                     <span ref={activetab} className="absolute bg-primary-400 top-2 left-3 h-full z-1 transition-all"></span>
                     <span ref={ray} onClick={() => { activeTab(ray.current, 'right') }} className="flex justify-center py-1 px-2 z-10 cursor-pointer">Rayvarz</span>
@@ -75,9 +75,9 @@ export default function experience() {
                                         <span className="flex gap-4p w-full">
                                             <span className="logo"><IconComponent /></span>
                                             <span className="flex flex-col justify-between">
-                                                <span className="flex gap-3 text-4xl">
-                                                    <span className="font-bold">{job.name}</span>
-                                                    <span className="font-extralight">{job.subtitle}</span>
+                                                <span className="flex gap-3 items-end">
+                                                    <span className="font-bold text-4xl">{job.name}</span>
+                                                    <span className="font-extralight text-3xl text-2xl-md">{job.subtitle}</span>
                                                 </span>
                                                 <span className="time font-extralight text-base">{job.type} - {GetDateDiff(job.start, job.end)}</span>
                                             </span>

@@ -5,7 +5,7 @@ export default function Skills() {
     return (
         <span className='z-10 grow flex items-center justify-center'>
             <span className='relative h-60p min-h-96 aspect-square'>
-                <img src={me.src} className='h-full' alt="" />
+                <img src={me.src} className='h-full max-h-96' alt="" />
                 <AngularIcon className='absolute aspect-square h-20p top-0p right-50p' />
                 <CSharpApiIcon className='absolute aspect-square h-20p top-100p right-50p' />
                 <JavascriptIcon className='absolute aspect-square h-20p top-50p right-100p' />

@@ -31,20 +31,20 @@ export default function projects() {
                         <span className="flex flex-col gap-10 items-center justify-center">
                             <img className="h-28" src={projects[activatedProject].image.src} alt="" />
                             <span className="flex flex-col gap-3 items-center">
-                                <span className="text-3xl font-hubot font-semibold">{projects[activatedProject].name}</span>
-                                <span className="font-thin text-xs">{projects[activatedProject].subtitle}</span>
+                                <span className="text-3xl font-hubot font-semibold text-center">{projects[activatedProject].name}</span>
+                                <span className="font-thin text-xs text-center">{projects[activatedProject].subtitle}</span>
                             </span>
                         </span>
                         <span className="flex gap-6">
-                            <span className="flex gap-3 font-hubot text-xs font-semibold">
+                            <span className="flex gap-3 font-hubot text-xs font-semibold items-center">
                                 <CalendarIcon className="w-4 stroke-secondary-300" />
                                 <span>{projects[activatedProject].start}</span>
                             </span>
                             {projects[activatedProject].icon.map(status => {
                                 const StatusIcon = status
                                 return (
-                                    <span className="flex gap-3 font-hubot text-xs font-semibold">
-                                        <StatusIcon className="w-4 stroke-secondary-300" />
+                                    <span className="flex gap-3 font-hubot text-xs font-semibold text-nowrap">
+                                        <StatusIcon className="w-4" />
                                         <span>{projects[activatedProject].status}</span>
                                     </span>
                                 )
