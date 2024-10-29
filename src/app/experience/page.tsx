@@ -1,8 +1,7 @@
 "use client"
 
-import { LegacyRef, useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import { Jobs } from "../@data/jobs";
-import { GetDateDiff } from "../@services/date.service";
 
 export default function experience() {
 
@@ -17,7 +16,7 @@ export default function experience() {
     useEffect(() => {
 
         return (() => {
-            activeTab(ray.current, 'right')
+            activeTab(ray.current, 'right');    
         })
     })
 
@@ -79,7 +78,7 @@ export default function experience() {
                                                     <span className="font-bold text-4xl">{job.name}</span>
                                                     <span className="font-extralight text-3xl text-2xl-md">{job.subtitle}</span>
                                                 </span>
-                                                <span className="time font-extralight text-base">{job.type} - {GetDateDiff(job.start, job.end)}</span>
+                                                <span className="time font-extralight text-base">{job.type} - {job.diff}</span>
                                             </span>
                                         </span>
                                         <span className="flex flex-col text-base italic font-extralight text-no-wrap">

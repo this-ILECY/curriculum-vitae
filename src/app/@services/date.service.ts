@@ -10,5 +10,5 @@ export function GetDateDiff(start: string, end: string) {
         yearDiff--;
     }
 
-    return `${yearDiff == 0 ? '': yearDiff + ' yrs and'} ${monthDiff} mos`
+    return `${yearDiff == 0 ? '' : yearDiff + ' yrs and'} ${monthDiff} mos`
 }
