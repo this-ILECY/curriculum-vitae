@@ -209,6 +209,16 @@ body {
   gap: 2.2%;
 }
 
+.tab-right {
+  right: 0.75rem;
+  left: unset;
+}
+
+.tab-left {
+  left: 0.75rem;
+  right: unset;
+}
+
 .max-w-60p {
   max-width: 60%;
 }
@@ -629,7 +639,60 @@ body {
     }
   }
 
+  .experience {
+    .job-box {
+      padding: 0;
+    }
 
+    .jobing {
+      gap: 10px;
+    }
+
+    .jobname {
+      flex-direction: column;
+      gap: 0;
+
+
+      .name {
+        font-size: 24px;
+        width: 100%;
+      }
+
+      .sub {
+        font-size: 16px;
+      }
+    }
+
+    .time,
+    .date {
+      font-size: 12px;
+      flex-direction: row;
+      gap: 5px;
+      align-items: flex-end;
+      font-style: normal;
+    }
+
+    .top-main {
+      flex-direction: column;
+    }
+
+    .desc {
+      font-size: 12px;
+    }
+
+    .tab {
+      font-size: 12px;
+    }
+
+    .jobIcon {
+      transition: none;
+      height: 50px;
+    }
+
+    .spacer {
+      width: 82px;
+    }
+  }
 
   @supports (hanging-punctuation: first) and (font: -apple-system-body) and (-webkit-appearance: none) {
     .page-layout-main {
