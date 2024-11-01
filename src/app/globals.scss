@@ -534,11 +534,11 @@ body {
     padding-bottom: 5%;
   }
 
-  .mx-0p{
+  .mx-0p {
     margin: 0;
   }
 
-  .text-2xl-md{
+  .text-2xl-md {
     font-size: 1.5rem;
   }
 }
@@ -546,5 +546,94 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@media only screen and (max-width:640px) {
+
+  // page component
+
+  .page-layout-main {
+    flex-direction: column-reverse;
+    padding: 0.5%;
+    height: 100%;
+  }
+
+  // navbar component
+  .navbar-main {
+    justify-content: space-between;
+    flex-direction: row;
+    gap: unset;
+    width: 100%;
+    padding: 16px;
+    background-color: #1b1b1b50;
+
+    &>span {
+      flex-direction: row;
+      gap: 3%;
+
+    }
+
+    .navItem {
+      padding-right: 3px;
+      padding-left: 3px;
+
+      &:hover {
+        background-color: unset;
+      }
+
+      p {
+        display: none;
+      }
+
+      .navIcon {
+        height: 24px;
+      }
+    }
+  }
+
+  .second-bar {
+    display: none;
+  }
+
+  // home component
+  .home-main {
+    .me-png {
+      right: -33%;
+      opacity: 0.5;
+      max-width: unset;
+    }
+
+    .home-text {
+      max-width: unset;
+      width: 100%;
+
+      &>* {
+        gap: 6px;
+      }
+
+      .creating {
+        font-size: 25px;
+      }
+
+      .powerfull {
+        font-size: 60px;
+      }
+
+      .supposed {
+        font-size: 10px;
+        width: 100%;
+        padding: 0;
+        max-width: unset;
+      }
+    }
+  }
+
+
+
+  @supports (hanging-punctuation: first) and (font: -apple-system-body) and (-webkit-appearance: none) {
+    .page-layout-main {
+      padding-bottom: 70px;
+    }
   }
 }

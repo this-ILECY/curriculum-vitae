@@ -40,10 +40,10 @@ export default function projects() {
                                 <CalendarIcon className="w-4 stroke-secondary-300" />
                                 <span>{projects[activatedProject].start}</span>
                             </span>
-                            {projects[activatedProject].icon.map(status => {
+                            {projects[activatedProject].icon.map((status, index) => {
                                 const StatusIcon = status
                                 return (
-                                    <span className="flex gap-3 font-hubot text-xs font-semibold text-nowrap">
+                                    <span key={'itemw-' + index} className="flex gap-3 font-hubot text-xs font-semibold text-nowrap">
                                         <StatusIcon className="w-4" />
                                         <span>{projects[activatedProject].status}</span>
                                     </span>
@@ -58,7 +58,7 @@ export default function projects() {
                             <span className="flex gap-3">
                                 {projects[activatedProject].technologies.map((tech, index) => {
                                     const Tech = tech;
-                                    return (<span className="p-2 bg-NeutralDark-200 rounded-full h-fit" key={index}><Tech className="w-5 h-5 rounded-full" /></span>)
+                                    return (<span key={'items-' + index} className="p-2 bg-NeutralDark-200 rounded-full h-fit"><Tech className="w-5 h-5 rounded-full" /></span>)
                                 }
                                 )}
                             </span>
@@ -68,7 +68,7 @@ export default function projects() {
                 <span className="flex gap-5 w-full p-7 rounded-2xl job-box items-center justify-center">
                     {projects.map((project, index) => {
                         const icon = project.image
-                        return (<span onClick={(el) => { changeActive(projectSelection.current[index] as HTMLElement, index) }} ref={(el) => { projectSelection.current[index] = el }}
+                        return (<span key={'item-' + index} onClick={(el) => { changeActive(projectSelection.current[index] as HTMLElement, index) }} ref={(el) => { projectSelection.current[index] = el }}
                             className="flex items-center justify-center flex-col gap-1.5 cursor-pointer hover:brightness-150">
                             <img style={{ 'height': '40px' }} src={icon.src} alt="" />
                             <span className={"active-project " + (index == 0 ? "bg-secondary-300" : '')}></span>
