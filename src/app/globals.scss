@@ -561,15 +561,19 @@ body {
 
 @media only screen and (max-width:640px) {
 
-  html{
+  html {
     width: unset;
     height: unset;
     overflow: hidden;
   }
+
   body,
   .main-page {
     padding-top: 0;
     padding-bottom: 0;
+    // height: calc(100vh - 4rem) !important;
+    /* overflow: hidden; */
+    // width: calc(100vw - 1rem) !important;
   }
 
   // page component
@@ -650,9 +654,11 @@ body {
     }
   }
 
+  // experience component
   .experience {
     .job-box {
       padding: 30px 0 0 0;
+      background: unset;
     }
 
     .jobing {
@@ -702,6 +708,56 @@ body {
 
     .spacer {
       width: 82px;
+    }
+  }
+
+  // projects component
+  .projects-component {
+    &>*{
+      gap: 10px;
+    }
+    .project-main {
+      grid-template-columns: 1fr;
+      grid-template-rows: unset;
+      gap: 10px;
+    }
+
+    .proj-img-name {
+      gap: 10px;
+
+      .proj-image {
+        height: 100px;
+      }
+
+      .proj-title {
+        gap: unset;
+      }
+
+      .proj-name {
+        font-size: 24px;
+      }
+    }
+
+    .desc {
+      gap: 10px;
+    }
+
+    .project-desc {
+      font-size: 12px;
+      max-height: 250px;
+      overflow: auto;
+    }
+
+    .nav-item-parent {
+
+      &:hover {
+        filter: unset;
+      }
+
+      .project-nav-item {
+        height: 30px !important;
+
+      }
     }
   }
 

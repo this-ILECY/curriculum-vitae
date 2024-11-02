@@ -24,18 +24,18 @@ export default function projects() {
     }
 
     return (
-        <span className="z-10 w-full flex items-center justify-center">
+        <span className="z-10 w-full flex items-center justify-center projects-component">
             <span className="flex flex-col gap-5 w-full h-full max-w-screen-lg">
                 <span className="grow project-main gap-5">
                     <span className="job-box rounded-2xl py-6 px-8 flex flex-col justify-between items-center">
-                        <span className="flex flex-col gap-10 items-center justify-center">
-                            <img className="h-28" src={projects[activatedProject].image.src} alt="" />
-                            <span className="flex flex-col gap-3 items-center">
-                                <span className="text-3xl font-hubot font-semibold text-center">{projects[activatedProject].name}</span>
+                        <span className="proj-img-name flex flex-col gap-10 items-center justify-center">
+                            <img className="proj-image h-28" src={projects[activatedProject].image.src} alt="" />
+                            <span className="proj-title flex flex-col gap-3 items-center">
+                                <span className="proj-name text-3xl font-hubot font-semibold text-center">{projects[activatedProject].name}</span>
                                 <span className="font-thin text-xs text-center">{projects[activatedProject].subtitle}</span>
                             </span>
                         </span>
-                        <span className="flex gap-6">
+                        <span className="flex gap-6 pt-1">
                             <span className="flex gap-3 font-hubot text-xs font-semibold items-center">
                                 <CalendarIcon className="w-4 stroke-secondary-300" />
                                 <span>{projects[activatedProject].start}</span>
@@ -52,7 +52,7 @@ export default function projects() {
                         </span>
                     </span>
                     <span className="desc gap-5">
-                        <span className="py-4 px-6 rounded-2xl job-box line-height font-hubot font-light text-base">{projects[activatedProject].description}</span>
+                        <span className="project-desc py-4 px-6 rounded-2xl job-box line-height font-hubot font-light text-base">{projects[activatedProject].description}</span>
                         <span className="flex justify-between items-center py-4 px-6 rounded-2xl job-box">
                             <span>we used</span>
                             <span className="flex gap-3">
@@ -69,8 +69,8 @@ export default function projects() {
                     {projects.map((project, index) => {
                         const icon = project.image
                         return (<span key={'item-' + index} onClick={(el) => { changeActive(projectSelection.current[index] as HTMLElement, index) }} ref={(el) => { projectSelection.current[index] = el }}
-                            className="flex items-center justify-center flex-col gap-1.5 cursor-pointer hover:brightness-150">
-                            <img style={{ 'height': '40px' }} src={icon.src} alt="" />
+                            className="flex items-center justify-center flex-col gap-1.5 cursor-pointer hover:brightness-150 nav-item-parent">
+                            <img className="project-nav-item" style={{ 'height': '40px' }} src={icon.src} alt="" />
                             <span className={"active-project " + (index == 0 ? "bg-secondary-300" : '')}></span>
                         </span>)
                     })}
