@@ -561,11 +561,15 @@ body {
 
 @media only screen and (max-width:640px) {
 
+  html{
+    width: unset;
+    height: unset;
+    overflow: hidden;
+  }
   body,
   .main-page {
     padding-top: 0;
     padding-bottom: 0;
-    height: 100%;
   }
 
   // page component
