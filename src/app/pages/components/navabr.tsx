@@ -4,12 +4,19 @@ import { useEffect, useState } from "react"
 import { HomeIcon, BriefcaseIcon, LightbulbIcon, GraduateIcon, AtSymbolIcon, DownloadIcon } from "../theme/icons"
 import { ComponentProps } from "@/app/interfaces/component.interface";
 import Link from "next/link";
-import { route } from "@/app/@consts/route";
+// import { route } from "@/app/@consts/route";
 import { usePathname } from 'next/navigation';
 
 export default function Navbar({ className }: ComponentProps) {
 
-    const routes = route;
+    const routes = {
+        home: { direction: '/home', id: 0 },
+        experience: { direction: '/experience', id: 1 },
+        projects: { direction: '/projects', id: 2 },
+        skills: { direction: '/skills', id: 3 },
+        contact: { direction: '/contact', id: 4 },
+    }
+
     const pathname = usePathname();
 
     const [activeIndex, setActiveIndex] = useState(0)
@@ -19,7 +26,7 @@ export default function Navbar({ className }: ComponentProps) {
     }
 
     const findItemId = (pathname: string) => {
-        return Object.values(route).find(routeObj => routeObj.direction === pathname).id;
+        return Object.values(routes).find(routeObj => routeObj.direction === pathname).id;
     }
 
     useEffect(() => {

@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import { IProject, Projects } from "../@data/projects"
 import { CalendarIcon } from "../pages/theme/icons";
-import Image from 'next/image';
+// import Image from 'next/image';
 
 export default function ProjectsComp() {
 
@@ -30,7 +30,7 @@ export default function ProjectsComp() {
                 <span className="grow project-main gap-5">
                     <span className="job-box rounded-2xl py-6 px-8 flex flex-col justify-between items-center">
                         <span className="proj-img-name flex flex-col gap-10 items-center justify-center">
-                            <Image className="proj-image h-28" src={projects[activatedProject].image.src} alt="" />
+                            <img className="proj-image h-28" src={projects[activatedProject].image.src} alt="" />
                             <span className="proj-title flex flex-col gap-3 items-center">
                                 <span className="proj-name text-3xl font-hubot font-semibold text-center">{projects[activatedProject].name}</span>
                                 <span className="font-thin text-xs text-center">{projects[activatedProject].subtitle}</span>
@@ -71,7 +71,7 @@ export default function ProjectsComp() {
                         const icon = project.image
                         return (<span key={'item-' + index} onClick={() => { changeActive(projectSelection.current[index] as HTMLElement, index) }} ref={(el) => { projectSelection.current[index] = el }}
                             className="flex items-center justify-center flex-col gap-1.5 cursor-pointer hover:brightness-150 nav-item-parent">
-                            <Image className="project-nav-item" style={{ 'height': '40px' }} src={icon.src} alt="" />
+                            <img className="project-nav-item" style={{ 'height': '40px' }} src={icon.src} alt="" />
                             <span className={"active-project " + (index == 0 ? "bg-secondary-300" : '')}></span>
                         </span>)
                     })}

@@ -1,10 +1,10 @@
 import me from '../../assets/png/me.png'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 export default function Home() {
     return (
         <span className="contents home-main">
-            <Image className="me-png h-full absolute right-0 bottom-0" src={me.src} alt="Me" />
+            <img className="me-png h-full absolute right-0 bottom-0" src={me.src} alt="Me" />
             <span className="home-text z-10 flex flex-col justify-between max-w-60p md:red">
                 <span className="flex flex-col">
                     <span className="creating font-hubot font-normal text-6xl md-text-5xl">An effective man creating</span>
