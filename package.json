@@ -6,7 +6,9 @@
     "dev": "next dev -H 0.0.0.0 -p 6070",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "next build",
+    "deploy": "next export && touch out/.nojekyll && git add out && git commit -m 'Deploy' && git push origin `git subtree split out main`:gh-pages --force"
   },
   "dependencies": {
     "next": "14.2.15",
