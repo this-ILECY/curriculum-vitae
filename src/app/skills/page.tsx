@@ -3,17 +3,17 @@ import { AdoIcon, AgileIcon, AngularIcon, AngularMaterialIcon, ApiIcon, AspIcon,
 
 export default function Skills() {
     return (
-        <span className='z-10 grow flex items-center justify-center'>
-            <span className='relative h-60p min-h-96 aspect-square'>
+        <span className='skills-component z-10 grow flex items-center justify-center'>
+            <span className='main-container relative h-60p min-h-96 aspect-square'>
                 <img src={me.src} className='h-full max-h-96' alt="" />
-                <AngularIcon className='absolute aspect-square h-20p top-0p right-50p' />
-                <CSharpApiIcon className='absolute aspect-square h-20p top-100p right-50p' />
-                <JavascriptIcon className='absolute aspect-square h-20p top-50p right-100p' />
-                <FigmaLogoIcon className='absolute aspect-square h-20p top-50p right-0p' />
-                <PhotoshopIcon className='absolute aspect-square h-20p photoshop f-round' />
-                <ReactIcon className='absolute aspect-square h-20p top-10p right-96p' />
-                <DotNetIcon className='absolute aspect-square h-20p top-96p right-4p' />
-                <TypescriptIcon className='absolute aspect-square h-20p top-96p right-96p f-round' />
+                <AngularIcon className='absolute aspect-square h-20p top-0p right-50p angular' />
+                <CSharpApiIcon className='absolute aspect-square h-20p top-100p right-50p csharp' />
+                <JavascriptIcon className='absolute aspect-square h-20p top-50p right-100p javascript' />
+                <FigmaLogoIcon className='absolute aspect-square h-20p top-50p right-0p figma' />
+                <PhotoshopIcon className='absolute aspect-square h-20p photoshop f-round photoshop' />
+                <ReactIcon className='absolute aspect-square h-20p top-10p right-96p react' />
+                <DotNetIcon className='absolute aspect-square h-20p top-96p right-4p dotnet' />
+                <TypescriptIcon className='absolute aspect-square h-20p top-96p right-96p f-round typescript' />
                 <RustIcon className='absolute aspect-square h-10p rust' />
                 <AngularMaterialIcon className='absolute aspect-square h-10p material' />
                 <PrimengIcon className='absolute aspect-square h-20p prime' />

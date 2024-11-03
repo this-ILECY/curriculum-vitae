@@ -582,6 +582,7 @@ body {
     flex-direction: column-reverse;
     padding: 0.5%;
     height: 100%;
+    padding-bottom: 70px;
   }
 
   // navbar component
@@ -713,9 +714,10 @@ body {
 
   // projects component
   .projects-component {
-    &>*{
+    &>* {
       gap: 10px;
     }
+
     .project-main {
       grid-template-columns: 1fr;
       grid-template-rows: unset;
@@ -748,22 +750,282 @@ body {
       overflow: auto;
     }
 
+    .we-used {
+      font-size: 12px;
+    }
+
     .nav-item-parent {
+
 
       &:hover {
         filter: unset;
       }
 
       .project-nav-item {
-        height: 30px !important;
-
+        width: 30px !important;
+        height: unset !important;
       }
+    }
+  }
+
+  // contact component
+  .contact-component {
+    padding-bottom: 30px;
+
+    .links-main {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .secondary-links {
+      gap: 20px;
+    }
+
+    svg {
+      width: 24px;
+      height: unset;
+    }
+
+    .heading {
+      font-size: 24px;
+    }
+
+    .primary-link,
+    .description {
+      font-size: 16px;
+    }
+
+  }
+
+  // skills component
+  .skills-component {
+    .main-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .angular {
+      height: 15%;
+      top: -8%;
+      right: 20%;
+    }
+
+    .javascript {
+      height: 15%;
+      top: -8%;
+      right: 60%;
+    }
+
+    .typescript {
+      height: 15%;
+      top: 5%;
+      right: 75%;
+    }
+
+    .react {
+      height: 15%;
+      top: 5%;
+      right: 0%;
+    }
+
+    .figma {
+      height: 15%;
+      top: 92%;
+      right: 20%;
+    }
+
+    .dotnet {
+      height: 15%;
+      top: 92%;
+      right: 55%;
+    }
+
+    .csharp {
+      height: 15%;
+      top: 80%;
+      right: 75%;
+    }
+
+    .photoshop {
+      height: 15%;
+      top: 80%;
+      right: 0%;
+    }
+    
+    .prime{
+      height: 8%;
+      top: -2%;
+      right: 53%;
+    }
+
+    .nest{
+      height: 12%;
+      top: -8%;
+      right: 42%;
+    }
+
+    .material{
+      height: 10%;
+      top: -8%;
+      right: 10%;
+    }
+
+    .jquery{
+      height: 5%;
+      top: -12%;
+      right: 38%;
+    }
+
+    .tail{
+      height: 5%;
+      top: -13%;
+      right: 59%;
+    }
+
+    .boot{
+      height: 5%;
+      top: -13%;
+      right: 14%;
+    }
+
+    .sass{
+      height: 5%;
+      top: 4%;
+      right: 18%;
+    }
+
+    .express{
+      height: 3%;
+      top: -6%;
+      right: 53%;
+    }
+
+    .node{
+      height: 10%;
+      top: -8%;
+      right: 80%;
+    }
+
+    .docker{
+      height: 5%;
+      top: -10%;
+      right: 77%;
+    }
+
+    .rabit{
+      height: 3%;
+      top: 0%;
+      right: 88%;
+    }
+
+    .html{
+      height: 5%;
+      top: -13%;
+      right: 50%;
+    }
+
+    .css{
+      height: 4%;
+      top: -15%;
+      right: 55%;
+    }
+
+    .socket{
+      height: 8%;
+      top: 94%;
+      right: 47%;
+    }
+
+    .rust{
+      height: 8%;
+      top: 97%;
+      right: 37%;
+    }
+
+    .agile{
+      height: 4%;
+      top: 105%;
+      right: 37%;
+    }
+
+    .xd{
+      height: 9%;
+      top: 94%;
+      right: 13%;
+    }
+
+    .unity{
+      height: 9%;
+      top: 103%;
+      right: 17%;
+    }
+
+    .linq{
+      height: 2%;
+      top: 108%;
+      right: 30%;
+    }
+
+    .sql{
+      height: 9%;
+      top: 94%;
+      right: 73%;
+    }
+
+    .postgress{
+      height: 6%;
+      top: 104%;
+      right: 70%;
+    }
+
+    .ado{
+      height: 6%;
+      top: 102%;
+      right: 82%;
+    }
+
+    .winform{
+      height: 4%;
+      top: 108%;
+      right: 65%;
+    }
+
+    .vb{
+      height: 4%;
+      top: 90%;
+      right: 73%;
+    }
+
+    .dapper{
+      height: 4%;
+      top: 97%;
+      right: 85%;
+    }
+
+    .api{
+      height: 6%;
+      top: 103%;
+      right: 50%;
+    }
+
+    .asp{
+      height: 6%;
+      top: 106%;
+      right: 47%;
+    }
+
+    .illustrartor{
+      height: 7%;
+      top: 98%;
+      right: 4%;
     }
   }
 
   @supports (hanging-punctuation: first) and (font: -apple-system-body) and (-webkit-appearance: none) {
     .page-layout-main {
-      padding-bottom: 70px;
+      padding-bottom: 90px;
     }
   }
 }

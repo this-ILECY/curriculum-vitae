@@ -54,7 +54,7 @@ export default function projects() {
                     <span className="desc gap-5">
                         <span className="project-desc py-4 px-6 rounded-2xl job-box line-height font-hubot font-light text-base">{projects[activatedProject].description}</span>
                         <span className="flex justify-between items-center py-4 px-6 rounded-2xl job-box">
-                            <span>we used</span>
+                            <span className="we-used">we used</span>
                             <span className="flex gap-3">
                                 {projects[activatedProject].technologies.map((tech, index) => {
                                     const Tech = tech;
