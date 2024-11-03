@@ -6,8 +6,11 @@ import { ComponentProps } from "@/app/interfaces/component.interface";
 import Link from "next/link";
 // import { route } from "@/app/@consts/route";
 import { usePathname } from 'next/navigation';
+import { useRouter } from "next/navigation";
 
 export default function Navbar({ className }: ComponentProps) {
+
+    const router = useRouter();
 
     const routes = {
         home: { direction: '/home', id: 0 },
@@ -26,7 +29,9 @@ export default function Navbar({ className }: ComponentProps) {
     }
 
     const findItemId = (pathname: string) => {
-        return Object.values(routes).find(routeObj => routeObj.direction === pathname) !== undefined ? Object.values(routes).find(routeObj => routeObj.direction === pathname).id : 0;
+        if (!Object.values(routes).find(routeObj => routeObj.direction === pathname)) router.push('/home');
+        
+        return Object.values(routes).find(routeObj => routeObj.direction === pathname).id;
     }
 
     useEffect(() => {
