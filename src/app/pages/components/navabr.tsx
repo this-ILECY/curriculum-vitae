@@ -26,7 +26,7 @@ export default function Navbar({ className }: ComponentProps) {
     }
 
     const findItemId = (pathname: string) => {
-        return Object.values(routes).find(routeObj => routeObj.direction === pathname) ? Object.values(routes).find(routeObj => routeObj.direction === pathname).id : 0;
+        return Object.values(routes).find(routeObj => routeObj.direction === pathname) !== undefined ? Object.values(routes).find(routeObj => routeObj.direction === pathname).id : 0;
     }
 
     useEffect(() => {
