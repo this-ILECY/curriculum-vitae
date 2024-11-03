@@ -30,8 +30,8 @@ export default function Navbar({ className }: ComponentProps) {
 
     const findItemId = (pathname: string) => {
         if (!Object.values(routes).find(routeObj => routeObj.direction === pathname)) router.push('/home');
-        
-        return Object.values(routes).find(routeObj => routeObj.direction === pathname).id;
+
+        return Object.values(routes).find(routeObj => routeObj.direction === pathname) ? Object.values(routes).find(routeObj => routeObj.direction === pathname).id : 0;
     }
 
     useEffect(() => {
@@ -74,10 +74,12 @@ export default function Navbar({ className }: ComponentProps) {
                     </span>
                 </Link>
             </span>
-            <span className={"navItem p-1.5 rounded-2xl w-fit simple-transition flex flex-row items-center gap-3 cursor-pointer"}>
-                <DownloadIcon className="w-9 navIcon" />
-                <p className="pr-3">Download CV</p>
-            </span>
+            <Link href={"https://this-ilecy.github.io/curriculum-vitae/downloads/curriculum_vitae.pdf"}>
+                <span className={"navItem p-1.5 rounded-2xl w-fit simple-transition flex flex-row items-center gap-3 cursor-pointer"}>
+                    <DownloadIcon className="w-9 navIcon" />
+                    <p className="pr-3">Download CV</p>
+                </span>
+            </Link>
         </span>
     )
 }
