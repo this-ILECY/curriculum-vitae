@@ -1,11 +1,12 @@
 import me from '../../assets/png/portrait-bio.png'
-import { AdoIcon, AgileIcon, AngularIcon, AngularMaterialIcon, ApiIcon, AspIcon, BootstrapIcon, CSharpApiIcon, CssIcon, DapperIcon, DockerIcon, DotNetIcon, ExpressIcon, FigmaIcon, FigmaLogoIcon, GitIcon, HTMLIcon, IllustratorIcon, JavascriptIcon, JQueryIcon, LinqIcon, MicroserviceIcon, NestJsIcon, NodeJsIcon, PhotoshopIcon, PostgressIcon, PrimengIcon, RabbitmqIcon, ReactIcon, RustIcon, SassIcon, SqlIcon, TailwindIcon, TypescriptIcon, UnityIcon, VBIcon, WebsocketIcon, WindowformAppIcon, XdIcon } from '../pages/theme/icons'
+import { AdoIcon, AgileIcon, AngularIcon, AngularMaterialIcon, ApiIcon, AspIcon, BootstrapIcon, CSharpApiIcon, CssIcon, DapperIcon, DockerIcon, DotNetIcon, ExpressIcon, FigmaLogoIcon, GitIcon, HTMLIcon, IllustratorIcon, JavascriptIcon, JQueryIcon, LinqIcon, NestJsIcon, NodeJsIcon, PhotoshopIcon, PostgressIcon, PrimengIcon, RabbitmqIcon, ReactIcon, RustIcon, SassIcon, SqlIcon, TailwindIcon, TypescriptIcon, UnityIcon, VBIcon, WebsocketIcon, WindowformAppIcon, XdIcon } from '../pages/theme/icons';
+import Image from 'next/image'
 
 export default function Skills() {
     return (
         <span className='skills-component z-10 grow flex items-center justify-center'>
             <span className='main-container relative h-60p min-h-96 aspect-square'>
-                <img src={me.src} className='h-full max-h-96' alt="" />
+                <Image src={me.src} className='h-full max-h-96' alt="" />
                 <AngularIcon className='absolute aspect-square h-20p top-0p right-50p angular' />
                 <CSharpApiIcon className='absolute aspect-square h-20p top-100p right-50p csharp' />
                 <JavascriptIcon className='absolute aspect-square h-20p top-50p right-100p javascript' />
