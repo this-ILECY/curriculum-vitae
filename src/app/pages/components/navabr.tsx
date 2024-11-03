@@ -74,7 +74,7 @@ export default function Navbar({ className }: ComponentProps) {
                     </span>
                 </Link>
             </span>
-            <a download={"CurriculumVitae.pdf"} href={"/CurriculumVitae.pdf"}>
+            <a download={"CurriculumVitae.pdf"} href={"https://this-ilecy.github.io/curriculum-vitae/CurriculumVitae.pdf"}>
                 <span className={"navItem p-1.5 rounded-2xl w-fit simple-transition flex flex-row items-center gap-3 cursor-pointer"}>
                     <DownloadIcon className="w-9 navIcon" />
                     <p className="pr-3">Download CV</p>
