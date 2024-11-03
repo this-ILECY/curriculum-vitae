@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import { IProject, Projects } from "../@data/projects"
 import { CalendarIcon } from "../pages/theme/icons";
 
-export default function projects() {
+export default function ProjectsComp() {
 
     const projects: IProject[] = Projects;
 

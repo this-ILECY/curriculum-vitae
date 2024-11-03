@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import { Job, Jobs } from "../@data/jobs";
 
-export default function experience() {
+export default function Experience() {
 
     const [activatedJob, setActivatedJob] = useState(0);
 
