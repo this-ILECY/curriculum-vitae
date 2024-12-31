@@ -17,7 +17,7 @@ export default function Contact() {
                     </span>
                     <span className="flex gap-3">
                         <TelegramIcon className="fill-secondary-300 w-8" />
-                        <span className="primary-link font-hubot text-xl font-light select-text">@ILECY_developer</span>
+                        <span className="primary-link font-hubot text-xl font-light select-text">@this_ILECY</span>
                     </span>
                 </span>
                 <span className="secondary-links flex gap-10">
